@@ -1,0 +1,3102 @@
+{
+  "122209388478374": {
+    "startSec": 0.05,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "90442984429511": {
+    "startSec": 0.49,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "98283641519215": {
+    "startSec": 0.600001,
+    "hold": 0.35
+  },
+  "75078726065204": {
+    "startSec": 0.47,
+    "hold": 0.3,
+    "distanceAdj": 0
+  },
+  "115253803957489": {
+    "startSec": 0.56,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "110295853822700": {
+    "startSec": 0.44,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "134177458585326": {
+    "startSec": 0.71,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "90222174246856": {
+    "startSec": 0.2,
+    "hold": 0.35
+  },
+  "94049296655188": {
+    "startSec": 1.32,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "106535138040115": {
+    "startSec": 0.52,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "112387369480518": {
+    "startSec": 0.2,
+    "hold": 0.35
+  },
+  "121746440756349": {
+    "startSec": 0.74,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "113373203557133": {
+    "startSec": 0.32,
+    "hold": 0.3,
+    "distanceAdj": 0
+  },
+  "127376055093534": {
+    "startSec": 0.62,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "115294061641691": {
+    "startSec": 0.21,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "78213991536260": {
+    "startSec": 0.2,
+    "hold": 0.35
+  },
+  "76927396984144": {
+    "startSec": 0.25,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "139054968112034": {
+    "startSec": 0.05,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "129838646358073": {
+    "startSec": 1.31,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "73200908069196": {
+    "startSec": 0.2,
+    "hold": 0.3,
+    "distanceAdj": 0
+  },
+  "91778889048315": {
+    "startSec": 0.76,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "112697833450520": {
+    "startSec": 0.41,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "126923665753961": {
+    "startSec": 0.3,
+    "hold": 0.35,
+    "startSec2": 0
+  },
+  "124343869615532": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "104722560930205": {
+    "startSec": 0.26,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "116560311654983": {
+    "startSec": 0.28,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "106519942311504": {
+    "startSec": 0.2,
+    "hold": 0.35
+  },
+  "91066171406248": {
+    "startSec": 0.37,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "71300661887319": {
+    "startSec": 0.21,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "114424436263982": {
+    "startSec": 0.36,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "103687126805661": {
+    "startSec": 0.19,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "111787805619609": {
+    "startSec": 0.21,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "128225558499036": {
+    "startSec": 0.26,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "94484323145049": {
+    "startSec": 0.26,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "134809434589356": {
+    "startSec": 0.47,
+    "hold": 0.3,
+    "distanceAdj": 0
+  },
+  "75292643761800": {
+    "startSec": 0.2,
+    "hold": 0.35
+  },
+  "79780873512551": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "97485727762508": {
+    "startSec": 0.54,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "138545708561292": {
+    "startSec": 0.1,
+    "hold": 0.35,
+    "startSec2": 0.3,
+    "startSec3": 0.65
+  },
+  "139181141648397": {
+    "startSec": 0.28,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "92288554612341": {
+    "startSec": 0.71,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "78887381717473": {
+    "startSec": 0.43,
+    "hold": 0.3,
+    "distanceAdj": 0
+  },
+  "111633774847428": {
+    "startSec": 0.2,
+    "hold": 0.35
+  },
+  "82130174183873": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "110920960051584": {
+    "startSec": 0.22,
+    "hold": 0.3,
+    "distanceAdj": 0
+  },
+  "140472353306379": {
+    "startSec": 0.65,
+    "hold": 0.6
+  },
+  "83748907427260": {
+    "startSec": 0.4,
+    "hold": 0.35
+  },
+  "102121388644772": {
+    "startSec": 0.21,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "103430086615689": {
+    "startSec": 0.2,
+    "hold": 0.35
+  },
+  "102683625069547": {
+    "startSec": 0.202,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "89588139226485": {
+    "startSec": 0.18,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "129441247864879": {
+    "startSec": 0.18,
+    "hold": 0.49,
+    "distanceAdj": 0
+  },
+  "91139296283591": {
+    "startSec": 0.56,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "113483328429065": {
+    "startSec": 0.41,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "92648977102139": {
+    "startSec": 0.18,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "97138435604112": {
+    "startSec": 0.18,
+    "hold": 0.49,
+    "distanceAdj": 0
+  },
+  "77200481731064": {
+    "startSec": 0.2,
+    "hold": 0.35
+  },
+  "78297239425049": {
+    "startSec": 0.27,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "93902031289683": {
+    "startSec": 0.18,
+    "hold": 0.49,
+    "distanceAdj": 0
+  },
+  "106543246548601": {
+    "startSec": 0.28,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "106731070269238": {
+    "hold": 0.202,
+    "startSec": 0.12,
+    "startSec3": 0.6,
+    "distanceAdj": 0,
+    "startSec2": 0.3
+  },
+  "109123230222277": {
+    "startSec": 0.18,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "129165719671535": {
+    "startSec": 0.41,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "87764692704657": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "102875021232794": {
+    "startSec": 0.26,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "77513027791610": {
+    "startSec": 0.28,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "139400282938724": {
+    "startSec": 0.37,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "85374473317909": {
+    "startSec": 0.36,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "106306160427852": {
+    "startSec": 0.27,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "78994342814792": {
+    "startSec": 0.76,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "102453919149515": {
+    "startSec": 0.57,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "94205575550862": {
+    "startSec": 0.202,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "75082454798619": {
+    "startSec": 0.27,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "130687440100798": {
+    "startSec": 0.26,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "98821211080909": {
+    "startSec": 0.41,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "80346871030944": {
+    "startSec": 0.26,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "86526104440485": {
+    "startSec": 0.56,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "84286984142876": {
+    "startSec": 0.32,
+    "hold": 0.3,
+    "distanceAdj": 0
+  },
+  "91417655657970": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "73760371893091": {
+    "startSec": 0.2,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "124747961486333": {
+    "startSec": 0.27,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "106461888875800": {
+    "startSec": 0.18,
+    "hold": 0.49,
+    "distanceAdj": 0
+  },
+  "99915059516084": {
+    "startSec": 0.32,
+    "hold": 0.3,
+    "distanceAdj": 0
+  },
+  "127801198650810": {
+    "startSec": 0.66,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "122454882730691": {
+    "startSec": 0.24,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "139299396702735": {
+    "startSec": 0.25,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "79913467941771": {
+    "startSec": 0.42,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "119567609934046": {
+    "startSec": 0.26,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "86208887161745": {
+    "startSec": 0.27,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "135442996725675": {
+    "startSec": 0.26,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "72719950628740": {
+    "startSec": 0.24,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "128106238874291": {
+    "startSec": 0.32,
+    "hold": 0.3,
+    "distanceAdj": 0
+  },
+  "102642995643169": {
+    "startSec5": 0.5,
+    "hold": 0.25,
+    "startSec": 0.1,
+    "startSec3": 0.3,
+    "distanceAdj": 0,
+    "startSec2": 0.2,
+    "startSec4": 0.4
+  },
+  "72678012629652": {
+    "startSec": 0.24,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "98960600377850": {
+    "startSec": 0.62,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "87087952781021": {
+    "startSec": 0.57,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "98178166706006": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "84438345872276": {
+    "startSec": 0.21,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "135114811245269": {
+    "startSec": 0.46,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "134646776465233": {
+    "startSec": 0.26,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "123727511642989": {
+    "startSec": 0.2,
+    "hold": 0.7
+  },
+  "137780787423425": {
+    "startSec": 0.35,
+    "hold": 0.3,
+    "distanceAdj": 0
+  },
+  "89816763320681": {
+    "startSec": 0.62,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "97888761442444": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "131442938695981": {
+    "startSec": 0.5,
+    "hold": 0.35
+  },
+  "90105278811432": {
+    "startSec": 0.21,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "107532205712495": {
+    "startSec": 0.36,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "134047638406873": {
+    "startSec": 0.27,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "78047711237192": {
+    "startSec": 0.42,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "120986873376194": {
+    "startSec": 0.05,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "139993959708671": {
+    "startSec": 0.26,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "85467164225058": {
+    "startSec": 0.26,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "92943080125846": {
+    "startSec": 0.26,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "140017849718031": {
+    "startSec": 0.36,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "73383098189453": {
+    "startSec": 0.31,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "92937790229658": {
+    "startSec": 0.6,
+    "hold": 0.35
+  },
+  "77165655925697": {
+    "startSec": 0.2,
+    "hold": 0.35
+  },
+  "125752021896733": {
+    "startSec": 0.26,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "109261766138092": {
+    "startSec": 0.56,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "129391517663928": {
+    "startSec": 0.66,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "118816187211996": {
+    "startSec": 0.24,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "77398914569691": {
+    "startSec": 0.86,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "82989744322417": {
+    "startSec": 0.05,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "116301245600177": {
+    "startSec": 0.2,
+    "hold": 0.35
+  },
+  "131740708909971": {
+    "startSec": 0.42,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "108769432958516": {
+    "startSec": 0.26,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "89743736303858": {
+    "startSec": 0.3,
+    "hold": 0.35
+  },
+  "102121546231536": {
+    "startSec": 0.39,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "130254051363204": {
+    "startSec": 0.37,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "94585296319676": {
+    "startSec": 0.34,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "124059164261714": {
+    "startSec": 0.05,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "105180107860331": {
+    "startSec": 0.21,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "108597895691635": {
+    "startSec": 0.26,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "78407625576237": {
+    "startSec": 0.71,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "135835813606350": {
+    "startSec": 0.37,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "100156113281578": {
+    "startSec": 0.76,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "91554414015826": {
+    "startSec": 0.42,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "107379745282989": {
+    "startSec": 0.21,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "81823547351174": {
+    "startSec": 0,
+    "hold": 0.6
+  },
+  "109500654652931": {
+    "startSec": 0.25,
+    "hold": 0.35
+  },
+  "86536208700676": {
+    "startSec": 0.31,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "114986752830080": {
+    "startSec": 0.2,
+    "hold": 0.35
+  },
+  "134872805405567": {
+    "startSec": 0.3,
+    "hold": 0.35
+  },
+  "121109139209671": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "95789306651549": {
+    "startSec": 0.21,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "104193632382850": {
+    "startSec": 0.36,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "114919639636573": {
+    "startSec": 0.31,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "105184330766070": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "96471996759631": {
+    "startSec": 0.21,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "70667320597389": {
+    "startSec": 0.36,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "131725694254635": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "98312504474371": {
+    "startSec": 0.21,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "103629114814061": {
+    "startSec": 0.202,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "125049330153289": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "134101600310736": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "87070202310860": {
+    "startSec": 0.63,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "86187711733321": {
+    "startSec": 0.46,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "100344407851618": {
+    "startSec": 0.36,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "90524148205499": {
+    "startSec": 0.21,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "114250633109382": {
+    "startSec": 0.21,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "117434170736698": {
+    "startSec": 0.27,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "103561209301954": {
+    "startSec": 0.37,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "118250904312310": {
+    "startSec": 0.05,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "126029045405951": {
+    "startSec": 0.36,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "139954890188682": {
+    "startSec": 0.26,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "71420999059607": {
+    "startSec": 0.51,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "113980459737564": {
+    "startSec": 1.31,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "123084791240164": {
+    "startSec": 0.18,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "116952479079386": {
+    "startSec": 0.45,
+    "hold": 2
+  },
+  "87246252041045": {
+    "startSec": 0.2,
+    "hold": 0.35
+  },
+  "72832638766630": {
+    "startSec": 0.21,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "71491979500146": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "83232773804937": {
+    "startSec": 0.05,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "122058927995139": {
+    "startSec": 0.21,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "71790033694498": {
+    "startSec": 0.56,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "139636612270661": {
+    "startSec": 0.41,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "96854702208827": {
+    "startSec": 0.26,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "82259311185179": {
+    "startSec": 0.66,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "108944058905120": {
+    "startSec": 0.28,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "123099788465699": {
+    "startSec": 0.26,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "100943833698866": {
+    "startSec": 0.2,
+    "hold": 0.35
+  },
+  "74212168479379": {
+    "startSec": 0.31,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "114126220009836": {
+    "startSec": 0.23,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "134287260412530": {
+    "startSec": 0.05,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "89307852214578": {
+    "startSec": 0.71,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "101521677894258": {
+    "startSec": 0.52,
+    "hold": 0.15000000000000002,
+    "distanceAdj": 0
+  },
+  "101138797487568": {
+    "startSec": 0.26,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "120354402053029": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "86146312560589": {
+    "startSec": 0.31,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "103255608932910": {
+    "startSec": 0.27,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "124496925241237": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "135530502434129": {
+    "startSec": 0.41,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "119882630862689": {
+    "startSec": 0.36,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "135839768689737": {
+    "startSec": 0.28,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "84271637509046": {
+    "startSec": 0.26,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "76256108008272": {
+    "startSec": 0.46,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "138484499722859": {
+    "startSec": 0.32,
+    "hold": 0.3,
+    "distanceAdj": 0
+  },
+  "129126721746103": {
+    "startSec": 0.36,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "100518651351311": {
+    "startSec": 0.26,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "120020227327971": {
+    "startSec": 0.05,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "74476808169846": {
+    "startSec": 0.24,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "86520696250760": {
+    "startSec": 0.26,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "139919975605872": {
+    "startSec": 0.2,
+    "hold": 0.35
+  },
+  "90521401898889": {
+    "startSec": 0.24,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "125127055135454": {
+    "startSec": 0.05,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "124557297937019": {
+    "startSec": 0.05,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "122114884655214": {
+    "startSec": 0.21,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "86916659589852": {
+    "startSec": 0.21,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "81343624564970": {
+    "startSec": 0.2,
+    "hold": 0.3,
+    "distanceAdj": 0
+  },
+  "124184099417502": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "127878009132771": {
+    "startSec": 0.28,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "130935192288883": {
+    "startSec": 0.05,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "125084555032360": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "135900749451957": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "108984564775659": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "82039423935881": {
+    "startSec": 0.05,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "112274617911382": {
+    "startSec": 0.26,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "135652259836955": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "72798299659280": {
+    "startSec": 0.81,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "136449717558100": {
+    "startSec": 0.25,
+    "hold": 0.35
+  },
+  "133200348314646": {
+    "startSec": 0.2,
+    "hold": 0.35
+  },
+  "83894242302290": {
+    "startSec": 0.31,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "76399640175696": {
+    "startSec": 0.202,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "102372557046570": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "106505011285566": {
+    "startSec": 0.21,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "117033713819488": {
+    "startSec": 0.26,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "76639298017828": {
+    "startSec": 0.202,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "120591268956676": {
+    "startSec": 0.2,
+    "hold": 0.3,
+    "distanceAdj": 0
+  },
+  "115882469124985": {
+    "startSec": 0.23,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "72519041274149": {
+    "startSec": 0.05,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "120819611310918": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "135309318514442": {
+    "startSec": 0.32,
+    "hold": 0.3,
+    "distanceAdj": 0
+  },
+  "137895113211806": {
+    "startSec": 0.21,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "124766932801835": {
+    "hold": 0.3,
+    "startSec": 0.02,
+    "distanceAdj": 0,
+    "startSec2": 0.22
+  },
+  "124170657036313": {
+    "startSec": 0.4,
+    "hold": 0.35
+  },
+  "128839194087258": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "101775258669555": {
+    "startSec": 0.25,
+    "hold": 0.35
+  },
+  "138228123826571": {
+    "startSec": 0.27,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "136330405034599": {
+    "startSec": 0.202,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "80660577461021": {
+    "startSec": 0.05,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "81458429848274": {
+    "startSec": 0.18,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "78483043922288": {
+    "startSec": 0.28,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "127462812873675": {
+    "startSec5": 1.2,
+    "hold": 0.25,
+    "startSec": 0.1,
+    "startSec3": 0.6,
+    "distanceAdj": 0,
+    "startSec2": 0.3,
+    "startSec4": 0.9
+  },
+  "139530979015102": {
+    "startSec": 0.26,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "121690165844259": {
+    "startSec": 0.05,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "88887567878370": {
+    "startSec": 0.66,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "124960892283230": {
+    "startSec": 0.18,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "113816047037124": {
+    "startSec": 0.21,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "114394198383881": {
+    "startSec": 0.31,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "110240097445732": {
+    "startSec": 0.19,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "105025163685810": {
+    "startSec": 0.31,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "139086739426590": {
+    "startSec": 0.46,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "118924333638893": {
+    "startSec": 0.3,
+    "hold": 0.35
+  },
+  "110738231926426": {
+    "startSec": 0.27,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "112467136433884": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "103934719133771": {
+    "startSec": 0.26,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "119912107937230": {
+    "startSec": 0.52,
+    "hold": 0.49,
+    "distanceAdj": 0
+  },
+  "71773261520410": {
+    "startSec": 1.16,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "135922159585894": {
+    "startSec": 0.26,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "103983671889052": {
+    "startSec": 0.41,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "126381011592027": {
+    "startSec": 0.31,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "112228610484983": {
+    "startSec": 0.46,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "90675128292011": {
+    "startSec": 0.31,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "83497963716622": {
+    "startSec": 0.1,
+    "hold": 1.8,
+    "startSec2": 1
+  },
+  "87887548675431": {
+    "startSec": 0.36,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "105728707511673": {
+    "startSec": 0.28,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "130077418131222": {
+    "startSec": 0.37,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "122232190589401": {
+    "startSec": 0.49,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "130214291629606": {
+    "startSec": 0.05,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "120664443221590": {
+    "startSec": 0.23,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "75970657905611": {
+    "startSec": 0.28,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "109285759428857": {
+    "startSec": 0.54,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "123818970722547": {
+    "startSec": 0.35,
+    "hold": 0.35,
+    "startSec2": 0.75,
+    "startSec3": 1.15
+  },
+  "135552671823399": {
+    "startSec": 0,
+    "hold": 0.2
+  },
+  "118774460645493": {
+    "startSec": 0.31,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "139055692093180": {
+    "startSec": 0.2,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "79981588130961": {
+    "startSec": 0.2,
+    "hold": 2
+  },
+  "136533060945586": {
+    "startSec": 0.26,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "135205073126877": {
+    "startSec": 0.25,
+    "hold": 0.35
+  },
+  "128736067362487": {
+    "startSec": 0.21,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "106867803794428": {
+    "startSec": 0.24,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "116706902543424": {
+    "startSec": 0.45,
+    "hold": 0.3,
+    "distanceAdj": 0
+  },
+  "131161290739036": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "131051682278134": {
+    "startSec": 0.18,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "107500740429380": {
+    "startSec": 0.57,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "84922253817066": {
+    "startSec": 0.05,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "104463070615470": {
+    "startSec": 0.31,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "129003302707709": {
+    "startSec": 0.26,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "94300503125812": {
+    "startSec": 0.24,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "95112578766555": {
+    "startSec": 0.36,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "126074016457313": {
+    "startSec": 0.27,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "96240580568749": {
+    "startSec": 0.27,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "119083279207398": {
+    "startSec": 0.05,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "115413666205678": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "105107078372382": {
+    "startSec": 0.37,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "125756826659861": {
+    "startSec": 0.27,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "102288540818350": {
+    "startSec": 0.32,
+    "hold": 0.49000000000000005,
+    "distanceAdj": 0
+  },
+  "127076012876251": {
+    "startSec": 0.36,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "103463736964630": {
+    "startSec": 0.25,
+    "hold": 0.35
+  },
+  "136182618554502": {
+    "startSec": 0.2,
+    "hold": 0.3,
+    "distanceAdj": 0
+  },
+  "105495357971239": {
+    "startSec": 0.21,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "135872625391687": {
+    "startSec": 0.2,
+    "hold": 0.6
+  },
+  "108307424389592": {
+    "startSec": 0.24,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "108758788048228": {
+    "startSec": 0.31,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "108310725995566": {
+    "startSec": 0.66,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "133772126041906": {
+    "startSec": 0.05,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "118696475800411": {
+    "startSec": 0.27,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "123543445163800": {
+    "startSec": 0.2,
+    "hold": 0.35
+  },
+  "134903538230160": {
+    "startSec": 0.1,
+    "hold": 0.35,
+    "startSec2": 0.5,
+    "startSec3": 1.2
+  },
+  "76467866872093": {
+    "startSec": 0.2,
+    "hold": 0.3,
+    "distanceAdj": 0
+  },
+  "126453556030481": {
+    "startSec": 0.26,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "92415288342537": {
+    "startSec": 0.18,
+    "hold": 0.49,
+    "distanceAdj": 0
+  },
+  "121339998382547": {
+    "startSec": 0.26,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "98932916989863": {
+    "startSec": 0.35,
+    "hold": 0.35,
+    "startSec2": 1
+  },
+  "104802848622022": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "114773679703806": {
+    "startSec": 0.27,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "107364098903611": {
+    "startSec": 0.2,
+    "hold": 0.35
+  },
+  "96389761265228": {
+    "startSec": 0.35,
+    "hold": 0.3,
+    "distanceAdj": 0
+  },
+  "107003202275371": {
+    "startSec": 0.21,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "115935194502458": {
+    "startSec": 0.31,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "95223978004602": {
+    "startSec": 0.45,
+    "hold": 0.35
+  },
+  "102546483231226": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "86163858467809": {
+    "startSec": 0.21,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "137619265423164": {
+    "startSec": 0.36,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "119570344423009": {
+    "startSec": 0.2,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "125123147660993": {
+    "startSec": 0.202,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "130872155278190": {
+    "startSec": 0.26,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "83210950678819": {
+    "startSec": 0.21,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "136400690344027": {
+    "startSec": 0.02,
+    "hold": 0.3,
+    "distanceAdj": 0
+  },
+  "86232832931002": {
+    "startSec": 0.22,
+    "hold": 0.48999999999999994,
+    "distanceAdj": 0
+  },
+  "72659935381687": {
+    "startSec": 0.31,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "100434572913975": {
+    "startSec": 0.24,
+    "hold": 0.15,
+    "distanceAdj": 0
+  },
+  "131297557817293": {
+    "startSec": 0.27,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "102445468244138": {
+    "startSec": 0.2,
+    "hold": 0.35
+  },
+  "106425271118510": {
+    "startSec": 0.05,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "125356670919319": {
+    "startSec": 0.21,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "137309504999398": {
+    "startSec": 0.2,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "96688039185573": {
+    "startSec": 0.41,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "74706986010083": {
+    "startSec": 0.202,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "109153497237538": {
+    "startSec": 0.2,
+    "hold": 0.35
+  },
+  "131074884814797": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "81633765878584": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "131164311515928": {
+    "startSec": 0.26,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "134473609101433": {
+    "hold": 0.3,
+    "startSec": 0.32,
+    "distanceAdj": 0,
+    "startSec2": 0.43
+  },
+  "88694211921073": {
+    "startSec": 0.27,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "90460084897725": {
+    "startSec": 0.3,
+    "hold": 0.35,
+    "startSec2": 0.5,
+    "startSec3": 1.15
+  },
+  "117824758967146": {
+    "startSec": 0.31,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "107868355016077": {
+    "startSec": 1.3,
+    "hold": 0.35
+  },
+  "106370380659362": {
+    "startSec": 0.56,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "84687276916489": {
+    "startSec": 0.202,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "125931598281917": {
+    "startSec": 0.41,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "115126886859402": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "99511332362280": {
+    "startSec": 0.75,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "101093312856347": {
+    "startSec": 0.31,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "95666706381611": {
+    "startSec": 0.71,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "121448140753859": {
+    "startSec": 0.26,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "98357517858626": {
+    "startSec": 0.62,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "100191558480841": {
+    "startSec": 0.26,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "125890371919098": {
+    "startSec": 0.44,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "105589945317363": {
+    "startSec": 0.88,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "138484657618379": {
+    "startSec": 1.01,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "137072596301637": {
+    "startSec": 0.2,
+    "hold": 0.35
+  },
+  "122819555320047": {
+    "startSec": 0.24,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "84888914033779": {
+    "startSec": 0.28,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "99157378634706": {
+    "startSec": 0.2,
+    "hold": 0.3,
+    "distanceAdj": 0
+  },
+  "86370715406171": {
+    "startSec": 0.24,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "139986278375552": {
+    "startSec": 0.21,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "107070912429001": {
+    "startSec": 0.66,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "100477706909641": {
+    "startSec": 0.36,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "104662503368656": {
+    "startSec": 0.21,
+    "hold": 0.35
+  },
+  "70467113681722": {
+    "startSec": 0.31,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "74877124260548": {
+    "startSec": 0.27,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "125009591132881": {
+    "startSec": 0.31,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "106604864550431": {
+    "startSec": 0.21,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "121050000257819": {
+    "startSec": 0.2,
+    "hold": 0.35
+  },
+  "83691818071163": {
+    "startSec": 0,
+    "hold": 0.7
+  },
+  "86293094696257": {
+    "startSec": 0.31,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "125001482194702": {
+    "startSec": 0.27,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "135024148593300": {
+    "startSec": 0.36,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "101613783270135": {
+    "hold": 0.3,
+    "startSec": 0.22,
+    "distanceAdj": 0,
+    "startSec2": 0.421
+  },
+  "134071135239015": {
+    "startSec": 0.24,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "136225630152817": {
+    "startSec": 0.21,
+    "hold": 0.3,
+    "distanceAdj": 0
+  },
+  "110164563494809": {
+    "startSec": 0.25,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "129495651539604": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "115257561645624": {
+    "startSec": 0.31,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "108665178801618": {
+    "startSec": 0.05,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "71855162512195": {
+    "startSec": 0.56,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "92214982692498": {
+    "startSec": 0.25,
+    "hold": 0.35
+  },
+  "121773250743693": {
+    "startSec": 0.24,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "87735609876920": {
+    "startSec": 0.2,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "117550760431415": {
+    "startSec": 0.33,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "109224647633849": {
+    "startSec": 0.52,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "122371661060085": {
+    "startSec": 0.202,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "123728918222864": {
+    "startSec": 0.32,
+    "hold": 0.3,
+    "distanceAdj": 0
+  },
+  "123196114390104": {
+    "startSec": 0.2,
+    "hold": 0.35
+  },
+  "80045220727843": {
+    "startSec": 0.44,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "81012015438327": {
+    "startSec": 0.05,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "127566287157805": {
+    "startSec": 0.35,
+    "hold": 0.35
+  },
+  "83022911727660": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "117771212630258": {
+    "startSec": 0.24,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "102158544938828": {
+    "startSec": 0.36,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "119850347232500": {
+    "startSec": 0.62,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "76212297226977": {
+    "startSec": 0.24,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "77317789467088": {
+    "startSec": 0.22,
+    "hold": 0.3,
+    "distanceAdj": 0
+  },
+  "102333760180664": {
+    "startSec": 0.202,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "91905183076845": {
+    "startSec": 0.26,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "102242322759462": {
+    "startSec": 0.27,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "114790391954408": {
+    "startSec": 0.36,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "92559206426916": {
+    "startSec": 0.21,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "76272752426300": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "78386126860643": {
+    "startSec": 0.2,
+    "hold": 0.35
+  },
+  "93457709307676": {
+    "startSec": 0.66,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "86086892466510": {
+    "startSec": 0.17,
+    "hold": 0.49,
+    "distanceAdj": 0
+  },
+  "102535173492586": {
+    "startSec": 0.24,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "137616314316140": {
+    "startSec": 0.26,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "82528260253305": {
+    "startSec": 0.2,
+    "hold": 0.35
+  },
+  "100108530622112": {
+    "startSec": 0.21,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "83637601333131": {
+    "startSec": 0.29,
+    "hold": 0.35
+  },
+  "99254874111919": {
+    "startSec": 0.26,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "138168065858800": {
+    "startSec": 0.36,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "128968439050740": {
+    "startSec": 0.26,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "133676778221315": {
+    "startSec": 0.52,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "104346885061572": {
+    "startSec": 0.2,
+    "hold": 0.35
+  },
+  "118446880650671": {
+    "startSec": 0.91,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "107193409342294": {
+    "startSec": 0.2,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "96875568331308": {
+    "startSec": 0.3,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "94946484791547": {
+    "startSec": 0.4,
+    "hold": 0.6
+  },
+  "100483961909371": {
+    "startSec": 0.31,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "81775282692043": {
+    "startSec": 0.24,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "85731406314619": {
+    "startSec": 0.15,
+    "hold": 0.35
+  },
+  "135303723032689": {
+    "startSec": 0.31,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "97110277579383": {
+    "startSec": 0.25,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "108646132311038": {
+    "startSec": 0.23,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "70837816696885": {
+    "startSec": 0.36,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "108012620140199": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "132998073977747": {
+    "startSec": 0.31,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "130560592953206": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "104337999454796": {
+    "startSec": 0.2,
+    "hold": 0.35
+  },
+  "120459951639400": {
+    "startSec": 0.2,
+    "hold": 0.35
+  },
+  "122576225066490": {
+    "startSec": 0.44,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "134639338336004": {
+    "startSec": 0.21,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "137684196851746": {
+    "startSec": 0.18,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "87004016130630": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "77659049501128": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "109184942183064": {
+    "startSec": 0.55,
+    "hold": 0.35
+  },
+  "132904283786634": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "120703912197833": {
+    "startSec": 0.2,
+    "hold": 0.3,
+    "distanceAdj": 0
+  },
+  "91532107165998": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "77780360064182": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "86206576218059": {
+    "startSec": 0.28,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "121056508765697": {
+    "startSec": 0.26,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "119527696165308": {
+    "startSec": 0.05,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "116238600074144": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "73188053010196": {
+    "startSec": 0.26,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "118233181584094": {
+    "startSec": 0.24,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "76298165986986": {
+    "startSec": 0.96,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "80560734051179": {
+    "startSec": 0.202,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "101523256677778": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "88769676978627": {
+    "startSec": 0.26,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "83173971266189": {
+    "startSec": 0.05,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "133929766213678": {
+    "startSec": 0.18,
+    "distanceAdj": 0,
+    "hold": 0.15
+  },
+  "138044545828371": {
+    "startSec": 0.25,
+    "hold": 0.6
+  },
+  "134969645280314": {
+    "startSec": 0.2,
+    "hold": 0.35
+  },
+  "81847794501615": {
+    "distanceAdj": 0,
+    "hold": 0.15,
+    "startSec": 0.1,
+    "startSec2": 0.7
+  },
+  "131910414352589": {
+    "startSec": 0.1,
+    "hold": 0.35,
+    "startSec2": 0.7
+  },
+  "105442988085026": {
+    "hold": 0.3,
+    "startSec": 0.32,
+    "distanceAdj": 0,
+    "startSec2": 0.42
+  },
+  "124819625937751": {
+    "startSec5": 0.25,
+    "hold": 0.2,
+    "startSec": 0.08,
+    "startSec3": 0.15,
+    "distanceAdj": 0,
+    "startSec2": 0.1,
+    "startSec4": 0.2,
+    "startSec6": 0.3
+  },
+  "125273732099482": {
+    "startSec": 0.29,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "123050241928041": {
+    "distanceAdj": 0.7,
+    "startSec": 0.53,
+    "hold": 0.35
+  },
+  "128650604729435": {
+    "distanceAdj": 0,
+    "startSec": 0.24,
+    "hold": 0.35
+  },
+  "84487644688034": {
+    "distanceAdj": 0,
+    "hold": 0.15,
+    "startSec": 0.05
+  },
+  "112735256988079": {
+    "distanceAdj": 0,
+    "hold": 0.15,
+    "startSec": 0.28,
+    "startSec2": 1.15
+  },
+  "119733843750352": {
+    "distanceAdj": 0,
+    "startSec": 0.24,
+    "hold": 0.35
+  },
+  "116093431616256": {
+    "distanceAdj": 0,
+    "hold": 0.8,
+    "startSec": 0.03,
+    "startSec2": 0.5
+  },
+  "111843219064172": {
+    "startSec": 0.2,
+    "hold": 0.35
+  },
+  "74422320699083": {
+    "startSec": 0.22,
+    "hold": 0.3,
+    "distanceAdj": 0
+  },
+  "100695225844315": {
+    "hold": 0.15,
+    "startSec": 0.2,
+    "startSec3": 0.9,
+    "distanceAdj": 0,
+    "startSec2": 0.5
+  },
+  "84883984460361": {
+    "startSec": 0.3,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "77453243901864": {
+    "hold": 0.2,
+    "startSec": 0.15,
+    "distanceAdj": 0,
+    "startSec2": 0.65
+  },
+  "106609775023823": {
+    "distanceAdj": 0,
+    "startSec": 0,
+    "hold": 0.35
+  },
+  "130159145951882": {
+    "distanceAdj": 0,
+    "startSec": 0,
+    "hold": 0.35
+  },
+  "126485913058460": {
+    "startSec": 0.47,
+    "hold": 0.3,
+    "distanceAdj": 0
+  },
+  "122661360698160": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "98771209216846": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "107752838734051": {
+    "startSec": 0.82,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "90783163947634": {
+    "distanceAdj": 0,
+    "startSec": 0.19,
+    "hold": 0.35
+  },
+  "140151698861152": {
+    "distanceAdj": 0,
+    "hold": 0.15,
+    "startSec": 0
+  },
+  "129368863744217": {
+    "startSec": 0.4,
+    "hold": 0.35,
+    "startSec2": 0.8
+  },
+  "100558480169185": {
+    "startSec": 0.22,
+    "hold": 0.35
+  },
+  "128101625557631": {
+    "startSec": 0.2,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "108197299905495": {
+    "startSec": 0.22,
+    "hold": 0.3,
+    "distanceAdj": 0
+  },
+  "78854925472750": {
+    "startSec": 0.2,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "78460284685534": {
+    "startSec": 0.2,
+    "hold": 0.35
+  },
+  "80201031269662": {
+    "startSec": 0.5,
+    "hold": 0.35
+  },
+  "110583793495632": {
+    "startSec": 0.1,
+    "hold": 0.35
+  },
+  "81988312529091": {
+    "distanceAdj": 0,
+    "startSec": 0.24,
+    "hold": 0.35
+  },
+  "109083782619351": {
+    "startSec": 0.4,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "75362717367704": {
+    "startSec": 0.37,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "101714150006632": {
+    "startSec": 0.32,
+    "hold": 0.3,
+    "distanceAdj": 0
+  },
+  "125415359989914": {
+    "startSec": 0.5,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "99762577752557": {
+    "startSec": 0.24,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "72464788731730": {
+    "startSec": 0.22,
+    "hold": 0.3,
+    "distanceAdj": 0
+  },
+  "114558724693893": {
+    "startSec": 0.22,
+    "hold": 0.3,
+    "distanceAdj": 0
+  },
+  "107992919085814": {
+    "startSec": 0.09,
+    "hold": 0,
+    "distanceAdj": 0
+  },
+  "87277155207058": {
+    "startSec": 0.19,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "103668941891085": {
+    "distanceAdj": 0,
+    "startSec": 0.03,
+    "startSec2": 0.65,
+    "hold": 0.15
+  },
+  "71335341504453": {
+    "startSec": 0.2,
+    "hold": 0.35
+  },
+  "115889394262154": {
+    "startSec": 0.29,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "127010872138675": {
+    "distanceAdj": 0,
+    "hold": 2.5,
+    "startSec": 0.28
+  },
+  "70506218732605": {
+    "distanceAdj": 0,
+    "startSec": 0.14,
+    "hold": 0.35
+  },
+  "131696285162463": {
+    "startSec": 0.42,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "137536807753517": {
+    "distanceAdj": 0,
+    "startSec": 0.29,
+    "hold": 0.35
+  },
+  "83183690291105": {
+    "startSec": 0.2,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "106775306544683": {
+    "distanceAdj": 0,
+    "hold": 0.15,
+    "startSec": 0
+  },
+  "113175465376972": {
+    "hold": 0.202,
+    "startSec": 0.69,
+    "distanceAdj": 0,
+    "startSec2": 0.7
+  },
+  "125810707684008": {
+    "startSec": 0.2,
+    "hold": 0.35
+  },
+  "125985327613003": {
+    "startSec": 0.2,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "128288200583021": {
+    "startSec": 0.2,
+    "hold": 0.35
+  },
+  "111022978492411": {
+    "distanceAdj": 0,
+    "hold": 0.15,
+    "startSec": 0.28
+  },
+  "102534431526280": {
+    "startSec": 0.2,
+    "hold": 0.35
+  },
+  "113219432678875": {
+    "startSec": 0.79,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "99807726895726": {
+    "distanceAdj": 0,
+    "hold": 0.15,
+    "startSec": 0
+  },
+  "130783290284678": {
+    "startSec": 0.3,
+    "hold": 0.35
+  },
+  "139358065129445": {
+    "startSec": 0.2,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "131385671108953": {
+    "startSec": 0.37,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "82642500378212": {
+    "distanceAdj": 0,
+    "hold": 1,
+    "startSec": 0.28,
+    "startSec2": 0.6
+  },
+  "83097071761073": {
+    "distanceAdj": 0,
+    "startSec": 0.78,
+    "hold": 0.35
+  },
+  "91668992403483": {
+    "hold": 0.2,
+    "startSec": 1.79,
+    "startSec3": 1.85,
+    "distanceAdj": 0,
+    "startSec2": 0.9
+  },
+  "116175888742894": {
+    "startSec": 0.34,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "98582715122328": {
+    "startSec": 0.22,
+    "hold": 0.3,
+    "distanceAdj": 0
+  },
+  "137484309550445": {
+    "distanceAdj": 1,
+    "startSec": 1.2,
+    "hold": 0.5
+  },
+  "113848079779223": {
+    "hold": 0.202,
+    "startSec": 0.19,
+    "distanceAdj": 0,
+    "startSec2": 1.2
+  },
+  "139760598014862": {
+    "distanceAdj": 0,
+    "startSec": 0.03,
+    "hold": 2
+  },
+  "95204787982562": {
+    "distanceAdj": 0,
+    "startSec": 0,
+    "hold": 0.35
+  },
+  "93419864791125": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "122675079330408": {
+    "distanceAdj": 0,
+    "startSec": 0.8,
+    "hold": 0.35
+  },
+  "128170253639184": {
+    "distanceAdj": 0,
+    "startSec": 0.03,
+    "hold": 0.35
+  },
+  "126930390220804": {
+    "startSec": 0.24,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "84032491629355": {
+    "startSec": 0.34,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "121092258344696": {
+    "startSec": 0,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "122316986850697": {
+    "distanceAdj": 0,
+    "startSec": 0.14,
+    "hold": 0.35
+  },
+  "84586700252767": {
+    "startSec": 0.34,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "138176350933335": {
+    "hold": 0.202,
+    "startSec": 0.14,
+    "distanceAdj": 0,
+    "startSec2": 0.2
+  },
+  "98385414593823": {
+    "startSec": 0.14,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "129618429137267": {
+    "hold": 0.202,
+    "startSec": 0.06,
+    "startSec3": 0.7,
+    "distanceAdj": 0,
+    "startSec2": 0.45
+  },
+  "132546734612246": {
+    "startSec": 0.24,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "94851661153324": {
+    "startSec": 1.54,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "88929119667129": {
+    "hold": 0.1,
+    "distanceAdj": 0.3,
+    "startSec": 0.3,
+    "startSec2": 0.4,
+    "startSec3": 0.5,
+    "startSec4": 0.6,
+    "startSec5": 0.7,
+    "startSec6": 0.8,
+    "startSec7": 0.9,
+    "startSec8": 1
+  },
+  "124926828571060": {
+    "startSec": 0.64,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "81033259149808": {
+    "distanceAdj": 0,
+    "startSec": 0.59,
+    "hold": 0.35
+  },
+  "78143990224156": {
+    "startSec": 0.26,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "110368664835385": {
+    "startSec": 0.25,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "78797347094985": {
+    "startSec": 0.21,
+    "hold": 0.48999999999999994,
+    "distanceAdj": 0
+  },
+  "134488256445396": {
+    "startSec": 0.21,
+    "hold": 0.48999999999999994,
+    "distanceAdj": 0
+  },
+  "99963342174936": {
+    "startSec": 0.21,
+    "hold": 0.3,
+    "distanceAdj": 0
+  },
+  "123123044774364": {
+    "startSec": 0.21,
+    "hold": 0.48999999999999994,
+    "distanceAdj": 0
+  },
+  "108458212372937": {
+    "startSec": 0.21,
+    "hold": 0.48999999999999994,
+    "distanceAdj": 0
+  },
+  "101751895166225": {
+    "startSec": 0.3,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "74834246969439": {
+    "hold": 0.202,
+    "startSec": 0.05,
+    "distanceAdj": 0,
+    "startSec2": 1
+  },
+  "111432568957261": {
+    "startSec": 0.1,
+    "hold": 0.35
+  },
+  "106662330750866": {
+    "startSec": 0,
+    "hold": 0.35
+  },
+  "76002694265538": {
+    "startSec": 0.2,
+    "hold": 0.35
+  },
+  "85614011160854": {
+    "startSec": 1.62,
+    "hold": 0.6000000000000001,
+    "distanceAdj": 0
+  },
+  "88509112744612": {
+    "startSec": 0.78,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "106257688932263": {
+    "startSec": 0.67,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "134741686910618": {
+    "startSec": 0.2,
+    "hold": 0.35
+  },
+  "103983986351361": {
+    "startSec": 0.3,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "128769681112635": {
+    "startSec5": 2.57,
+    "hold": 2.25,
+    "startSec7": 2.97,
+    "startSec": 1.77,
+    "startSec3": 2.17,
+    "distanceAdj": 0,
+    "startSec2": 1.97,
+    "startSec4": 2.37,
+    "startSec6": 2.77
+  },
+  "90597596100338": {
+    "startSec": 0.25,
+    "hold": 0.35
+  },
+  "130277667485774": {
+    "startSec": 0.02,
+    "hold": 0.3,
+    "distanceAdj": 0
+  },
+  "123392788492194": {
+    "startSec": 0.25,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "111230499786651": {
+    "startSec": 0.19,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "84024525589689": {
+    "startSec": 0.9,
+    "hold": 0.2599999999999999,
+    "distanceAdj": 0
+  },
+  "136761323860583": {
+    "startSec": 0.2,
+    "hold": 0.35
+  },
+  "117496754196287": {
+    "startSec": 0.34,
+    "hold": 0.39999999999999997,
+    "distanceAdj": 0
+  },
+  "111882127396652": {
+    "startSec": 0.27,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "130405818992714": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "72026342966670": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "107287988363428": {
+    "startSec": 0.3,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "129436447203162": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "122049582999621": {
+    "startSec": 0.3,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "84043093107309": {
+    "startSec": 0.3,
+    "hold": 0.29000000000000004,
+    "distanceAdj": 0
+  },
+  "138603645472753": {
+    "startSec": 0.31,
+    "hold": 0.38999999999999996,
+    "distanceAdj": 0
+  },
+  "87492498431491": {
+    "startSec": 0.3,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "127813492491875": {
+    "startSec": 0.2,
+    "hold": 0.35
+  },
+  "119562797224144": {
+    "hold": 0.4,
+    "startSec": 0.92,
+    "startSec3": 2.648,
+    "distanceAdj": 0,
+    "startSec2": 1.784
+  },
+  "95010299561530": {
+    "startSec": 0.2,
+    "hold": 0.35
+  },
+  "112950532323350": {
+    "startSec": 0.3,
+    "hold": 0.29000000000000004,
+    "distanceAdj": 0
+  },
+  "96651052503322": {
+    "startSec": 0.02,
+    "hold": 0.3,
+    "distanceAdj": 0
+  },
+  "114579951667352": {
+    "startSec": 0.3,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "73909511758220": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "90448243904946": {
+    "startSec": 0.4,
+    "hold": 0.6
+  },
+  "73163780581936": {
+    "hold": 0.53,
+    "startSec": 1.74,
+    "distanceAdj": 0,
+    "startSec2": 3.24
+  },
+  "111909089248577": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "119065419146950": {
+    "startSec": 0.2,
+    "hold": 0.35
+  },
+  "92796333738710": {
+    "startSec": 0.32,
+    "hold": 0.3,
+    "distanceAdj": 0
+  },
+  "97870196303383": {
+    "startSec": 1.17,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "82068830027727": {
+    "startSec": 0.2501,
+    "hold": 0.35
+  },
+  "134132208906469": {
+    "startSec": 0.2,
+    "hold": 0.35
+  },
+  "123559289828864": {
+    "startSec": 0.37,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "140176432457093": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "95150289594302": {
+    "startSec": 0.29,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "111637306541526": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "135750505225960": {
+    "startSec": 0.2,
+    "hold": 0.35
+  },
+  "101726485168893": {
+    "startSec": 0.52,
+    "hold": 0.4,
+    "distanceAdj": 0
+  },
+  "82184472713821": {
+    "startSec": 2.02,
+    "hold": 0.2999999999999998,
+    "distanceAdj": 0
+  },
+  "128625727833366": {
+    "startSec": 0.47,
+    "hold": 0.3,
+    "distanceAdj": 0
+  },
+  "75375865302458": {
+    "startSec": 0.62,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "98841389059878": {
+    "startSec": 1.02,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "126141375680416": {
+    "startSec": 0.2,
+    "hold": 0.35
+  },
+  "115299391673163": {
+    "startSec": 0.69,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "89513092915984": {
+    "startSec": 2.02,
+    "hold": 0.3700000000000001,
+    "distanceAdj": 0
+  },
+  "70738136253672": {
+    "startSec": 0.17,
+    "hold": 0.29999999999999993,
+    "distanceAdj": 0
+  },
+  "124861357738478": {
+    "startSec": 0.27,
+    "hold": 0.30000000000000004,
+    "distanceAdj": 0
+  },
+  "115340718314209": {
+    "startSec": 0.32,
+    "hold": 0.3,
+    "distanceAdj": 0
+  },
+  "75168761580156": {
+    "startSec": 0.45,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "139753135160439": {
+    "startSec": 0.15,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "139792635036817": {
+    "startSec": 0.36,
+    "hold": 0.1,
+    "distanceAdj": 0
+  },
+  "91672430450727": {
+    "startSec": 1.25,
+    "hold": 0.202,
+    "distanceAdj": 0
+  },
+  "107117289445392": {
+    "startSec": 0.25,
+    "hold": 1.1
+  },
+  "80282556994586": {
+    "startSec": 0.2,
+    "hold": 0.35
+  },
+  "136184907369757": {
+    "startSec": 0.25,
+    "hold": 0.6
+  },
+  "77368757687748": {
+    "startSec": 0,
+    "hold": 1.5
+  },
+  "124099807109821": {
+    "startSec": 3,
+    "hold": 0.35,
+    "startSec2": 3.2
+  },
+  "77155731069867": {
+    "startSec": 0.2,
+    "hold": 0.35
+  },
+  "110669648239165": {
+    "startSec": 0.3,
+    "hold": 0.35
+  },
+  "9876543210": {
+    "startSec": 0.41,
+    "hold": 0.3
+  }
+}
