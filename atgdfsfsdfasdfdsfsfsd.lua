@@ -1,14 +1,13 @@
--- ============================================
--- AUTO PARRY MODULE (Non-Obfuscated)
--- ============================================
-
 if not game:IsLoaded() then
     game.Loaded:Wait()
 end
 
-local AutoParry = {}
+local plr = game:GetService("Players").LocalPlayer
+local char = plr.Character or plr.CharacterAdded:Wait()
+char:WaitForChild("Humanoid")
+char:WaitForChild("HumanoidRootPart")
+task.wait(3)
 
--- Configuration
 getgenv().AutoParryEnabled = getgenv().AutoParryEnabled or false
 getgenv().DEBUG_ENABLED = getgenv().DEBUG_ENABLED or false
 getgenv().DETECTION_DISTANCE = tonumber(getgenv().DETECTION_DISTANCE) or 20
@@ -16,7 +15,9 @@ getgenv().BLOCK_M1_ENABLED = getgenv().BLOCK_M1_ENABLED or false
 getgenv().TARGET_FACING_CHECK_ENABLED = getgenv().TARGET_FACING_CHECK_ENABLED or false
 getgenv().TARGET_FACING_ANGLE = tonumber(getgenv().TARGET_FACING_ANGLE) or 75
 getgenv().SHEATH_CHECK_ENABLED = getgenv().SHEATH_CHECK_ENABLED or false
-getgenv().PING_COMPENSATION = tonumber(getgenv().PING_COMPENSATION) or 0
+getgenv().LEADERBOARD_SPECTATE_ENABLED = getgenv().LEADERBOARD_SPECTATE_ENABLED or false
+local PING_COMP_BASE = 0
+getgenv().PING_COMPENSATION = tonumber(getgenv().PING_COMPENSATION) or PING_COMP_BASE
 getgenv().WHITELISTED_PLAYERS = getgenv().WHITELISTED_PLAYERS or {}
 getgenv().FAILURE_RATE = tonumber(getgenv().FAILURE_RATE) or 0
 getgenv().ROLL_ON_COOLDOWN_ENABLED = getgenv().ROLL_ON_COOLDOWN_ENABLED or false
@@ -24,23 +25,19 @@ getgenv().ANIMATION_CHECK_ENABLED = getgenv().ANIMATION_CHECK_ENABLED or false
 getgenv().LAST_PARRY_TIME = tonumber(getgenv().LAST_PARRY_TIME) or 0
 getgenv().PARRY_COOLDOWN = tonumber(getgenv().PARRY_COOLDOWN) or 0.5
 getgenv().ACTUAL_PARRY_COOLDOWN = tonumber(getgenv().ACTUAL_PARRY_COOLDOWN) or 0.5
+getgenv().PARRY_WITH_DASH_ONLY_DEBUG = getgenv().PARRY_WITH_DASH_ONLY_DEBUG or false
 
--- Services
 local lp = game.Players.LocalPlayer
 local character = lp.Character or lp.CharacterAdded:Wait()
+local connections = {}
+local allAnims = {}
+local activeBlockWindows = {}
 local UserInputService = game:GetService("UserInputService")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local BlockRemote = ReplicatedStorage:WaitForChild("Bridgenet2Main"):WaitForChild("dataRemoteEvent")
 
--- Variables
-local connections = {}
-local allAnims = {}
-local activeBlockWindows = {}
-local isCurrentlyParrying = false
-local lastParryTime = 0
-
--- Anti-detection hook
 local CP = game:GetService("ContentProvider")
+
 local old_namecall
 old_namecall = hookmetamethod(game, "__namecall", function(self, ...)
     local method = getnamecallmethod()
@@ -49,19 +46,6 @@ old_namecall = hookmetamethod(game, "__namecall", function(self, ...)
     end
     return old_namecall(self, ...)
 end)
-
--- Helper Functions
-local function normalizeAnimId(idStr)
-    if not idStr then return "" end
-    local digits = tostring(idStr):match("%d+")
-    return digits or tostring(idStr)
-end
-
-local function debugPrint(...)
-    if getgenv().DEBUG_ENABLED then
-        print("[AutoParry]", ...)
-    end
-end
 
 local function sendAction(moduleName, extra)
     local payload = {Module = moduleName}
@@ -81,6 +65,18 @@ local function sendAction(moduleName, extra)
     pcall(function()
         BlockRemote:FireServer(unpack(args))
     end)
+end
+
+local function normalizeAnimId(idStr)
+    if not idStr then return "" end
+    local digits = tostring(idStr):match("%d+")
+    return digits or tostring(idStr)
+end
+
+local function debugPrint(...)
+    if getgenv().DEBUG_ENABLED then
+        print(...)
+    end
 end
 
 local function isTargetFacingMe(attackerHRP, myHRP)
@@ -107,7 +103,200 @@ local function isWeaponOut()
     return false
 end
 
--- Base64 decode
+local function notify(title, text, duration)
+    duration = duration or 2
+    local ok = pcall(function()
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+            Title = title,
+            Text = text,
+            Duration = duration
+        })
+    end)
+    if not ok then
+        debugPrint("Notify:", title, text)
+    end
+end
+
+local spectateState = {
+    connections = {},
+    childConn = nil,
+    guiConn = nil,
+    prevSubject = nil,
+    prevType = nil,
+    targetName = nil,
+    highlight = nil,
+    activeButton = nil,
+    labelColors = {},
+}
+
+local function getLeaderboardContainer()
+    local playerGui = lp:FindFirstChild("PlayerGui")
+    local lbGui = playerGui and playerGui:FindFirstChild("Leaderboard")
+    local lbFrame = lbGui and lbGui:FindFirstChild("Leaderboard")
+    return lbFrame
+end
+
+local function restoreCamera()
+    local cam = workspace.CurrentCamera
+    if spectateState.prevSubject then
+        cam.CameraSubject = spectateState.prevSubject
+    end
+    if spectateState.prevType then
+        cam.CameraType = spectateState.prevType
+    end
+    if spectateState.highlight then
+        spectateState.highlight:Destroy()
+        spectateState.highlight = nil
+    end
+    if spectateState.activeButton and spectateState.labelColors[spectateState.activeButton] then
+        for lbl, color in pairs(spectateState.labelColors[spectateState.activeButton]) do
+            if lbl and lbl.Parent then
+                lbl.TextColor3 = color
+            end
+        end
+    end
+    spectateState.activeButton = nil
+    spectateState.prevSubject = nil
+    spectateState.prevType = nil
+    spectateState.targetName = nil
+end
+
+local function setButtonHighlight(btn, isActive)
+    if not btn then return end
+    if not spectateState.labelColors[btn] then
+        spectateState.labelColors[btn] = {}
+    end
+    for _, d in ipairs(btn:GetDescendants()) do
+        if d:IsA("TextLabel") or d:IsA("TextButton") then
+            if isActive then
+                if not spectateState.labelColors[btn][d] then
+                    spectateState.labelColors[btn][d] = d.TextColor3
+                end
+                d.TextColor3 = Color3.fromRGB(255, 0, 0)
+            else
+                if spectateState.labelColors[btn][d] then
+                    d.TextColor3 = spectateState.labelColors[btn][d]
+                end
+            end
+        end
+    end
+    if not isActive then
+        spectateState.labelColors[btn] = nil
+    end
+end
+
+local function setSpectateTarget(btn)
+    if not (btn and btn.Name) then return end
+    local name = btn.Name
+
+    if spectateState.targetName == name and spectateState.activeButton == btn then
+        debugPrint("[SPECTATE] Stopping spectate on", name)
+        restoreCamera()
+        return
+    end
+
+    local targetPlr = game:GetService("Players"):FindFirstChild(name)
+    if not targetPlr then return end
+    local targetChar = targetPlr.Character or targetPlr.CharacterAdded:Wait()
+    local humanoid = targetChar:FindFirstChildOfClass("Humanoid")
+    if not humanoid then return end
+
+    if spectateState.highlight then
+        spectateState.highlight:Destroy()
+        spectateState.highlight = nil
+    end
+    local hl = Instance.new("Highlight")
+    hl.FillTransparency = 1
+    hl.OutlineTransparency = 0
+    hl.OutlineColor = Color3.fromRGB(255, 0, 0)
+    hl.Adornee = targetChar
+    hl.Parent = targetChar
+    spectateState.highlight = hl
+
+    local cam = workspace.CurrentCamera
+    if not spectateState.prevSubject then
+        spectateState.prevSubject = cam.CameraSubject
+        spectateState.prevType = cam.CameraType
+    end
+    cam.CameraType = Enum.CameraType.Custom
+    cam.CameraSubject = humanoid
+
+    if spectateState.activeButton and spectateState.activeButton ~= btn then
+        setButtonHighlight(spectateState.activeButton, false)
+    end
+    setButtonHighlight(btn, true)
+    spectateState.activeButton = btn
+    spectateState.targetName = name
+    debugPrint("[SPECTATE] Now spectating:", name)
+end
+
+local function connectButton(btn)
+    if not (btn and btn:IsA("ImageButton")) then return end
+    if spectateState.connections[btn] then return end
+    spectateState.connections[btn] = btn.MouseButton1Click:Connect(function()
+        if getgenv().LEADERBOARD_SPECTATE_ENABLED then
+            setSpectateTarget(btn)
+        end
+    end)
+end
+
+local function bindLeaderboardButtons(container)
+    if not container then return end
+    for _, child in ipairs(container:GetChildren()) do
+        connectButton(child)
+    end
+    if spectateState.childConn then
+        spectateState.childConn:Disconnect()
+    end
+    spectateState.childConn = container.ChildAdded:Connect(connectButton)
+end
+
+function enableLeaderboardSpectate()
+    local container = getLeaderboardContainer()
+    if container then
+        spectateState.container = container
+        bindLeaderboardButtons(container)
+    else
+        debugPrint("[SPECTATE] Leaderboard UI not found; waiting for it to appear")
+        local playerGui = lp:FindFirstChild("PlayerGui")
+        if playerGui then
+            if spectateState.guiConn then
+                spectateState.guiConn:Disconnect()
+            end
+            spectateState.guiConn = playerGui.ChildAdded:Connect(function(child)
+                if child.Name == "Leaderboard" then
+                    local lbFrame = child:FindFirstChild("Leaderboard")
+                    if lbFrame then
+                        bindLeaderboardButtons(lbFrame)
+                    end
+                end
+            end)
+        end
+    end
+end
+
+function disableLeaderboardSpectate()
+    for _, conn in pairs(spectateState.connections) do
+        if conn then conn:Disconnect() end
+    end
+    spectateState.connections = {}
+    if spectateState.childConn then
+        spectateState.childConn:Disconnect()
+    end
+    spectateState.childConn = nil
+    if spectateState.guiConn then
+        spectateState.guiConn:Disconnect()
+    end
+    spectateState.guiConn = nil
+    if spectateState.activeButton then
+        setButtonHighlight(spectateState.activeButton, false)
+    end
+    spectateState.activeButton = nil
+    restoreCamera()
+end
+
+local DATA_URL = "https://raw.githubusercontent.com/fdsfdsadASDSADASD/FDHFGHFDGFDVHDA/refs/heads/main/ghdfghdgfdgdsf.txt"
+
 local function base64Decode(data)
     local b = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
     data = string.gsub(data, '[^'..b..'=]', '')
@@ -124,9 +313,7 @@ local function base64Decode(data)
     end))
 end
 
--- Load animation data
 local function loadAnimationData()
-    local DATA_URL = "https://raw.githubusercontent.com/fdsfdsadASDSADASD/FDHFGHFDGFDVHDA/refs/heads/main/ghdfghdgfdgdsf.txt"
     local http = game:GetService("HttpService")
     local okFetch, encoded = pcall(function()
         return game:HttpGet(DATA_URL)
@@ -139,11 +326,12 @@ local function loadAnimationData()
             debugPrint("Base64 decode failed")
             return {}
         end
+        
         local okDecode, data = pcall(function()
             return http:JSONDecode(decoded)
         end)
         if okDecode and type(data) == "table" then
-            debugPrint("Animation data loaded successfully")
+            debugPrint("Loaded animation data from GitHub")
             return data
         else
             debugPrint("JSON decode failed")
@@ -157,7 +345,6 @@ end
 local combatAnims = {}
 local animationData = loadAnimationData()
 
--- Build combatAnims
 for animId, animInfo in pairs(animationData) do
     if type(animInfo) ~= "table" then continue end
     
@@ -168,17 +355,14 @@ for animId, animInfo in pairs(animationData) do
     for key, value in pairs(animInfo) do
         local idxStr = tostring(key):match("^startSec(%d*)$")
         if idxStr ~= nil then
-            local idx = (idxStr == "") and 1 or tonumber(idxStr)
-            local startTime = tonumber(value)
-            if startTime and type(startTime) == "number" then
-                local holdKey = (idx == 1) and "hold" or ("hold" .. idx)
-                local holdVal = tonumber(animInfo[holdKey])
-                if not holdVal or type(holdVal) ~= "number" then
-                    holdVal = baseHold
-                end
+            local startSec = tonumber(value)
+            if startSec and type(startSec) == "number" then
+                local holdKey = "hold" .. (idxStr ~= "" and idxStr or "")
+                local hold = tonumber(animInfo[holdKey]) or baseHold
+                
                 table.insert(hitWindows, {
-                    startTime = startTime,
-                    hold = holdVal
+                    startTime = startSec,
+                    hold = hold
                 })
             end
         end
@@ -198,7 +382,16 @@ for animId, animInfo in pairs(animationData) do
     table.insert(combatAnims, entry)
 end
 
--- Setup player animations
+local function cleanupConnections()
+    for i, connection in pairs(connections) do
+        if typeof(connection) == "RBXScriptConnection" then
+            connection:Disconnect()
+        end
+    end
+    table.clear(connections)
+    table.clear(allAnims)
+end
+
 local function setupPlayerAnimations(player)
     if not player or player.Name == lp.Name then return end
     
@@ -226,18 +419,17 @@ local function setupPlayerAnimations(player)
     table.insert(connections, connection)
 end
 
--- Initialize players
 for _, player in pairs(game.Workspace.Entities:GetChildren()) do
     setupPlayerAnimations(player)
 end
 
-local con = game.Workspace.Entities.ChildAdded:Connect(function(child)
+local con = game.Workspace.Entities.ChildAdded:Connect(function (child)
     wait(1)
     setupPlayerAnimations(child)
 end)
-table.insert(connections, con)
+table.insert(connections,con)
 
--- Damage monitor
+local lastBlockAttempt = {}
 local function setupDamageMonitor()
     local humanoid = character and character:FindFirstChild("Humanoid")
     if not humanoid then return end
@@ -250,15 +442,14 @@ end
 
 setupDamageMonitor()
 
--- Cooldown tracking
 local function setupCooldownTracking()
     local replicatedStorage = game:GetService("ReplicatedStorage")
     pcall(function()
         local cooldownRemote = replicatedStorage:WaitForChild("Remotes"):WaitForChild("HUDCooldownUpdate")
         cooldownRemote.OnClientEvent:Connect(function(abilityName, cooldownDuration)
             if abilityName == "Block" or abilityName == "Parry" then
-                getgenv().ACTUAL_PARRY_COOLDOWN = cooldownDuration or 0.5
-                debugPrint("Parry cooldown updated:", cooldownDuration)
+                getgenv().ACTUAL_PARRY_COOLDOWN = tonumber(cooldownDuration) or 0.5
+                debugPrint("[COOLDOWN] Server reported parry cooldown:", getgenv().ACTUAL_PARRY_COOLDOWN, "seconds")
             end
         end)
     end)
@@ -266,7 +457,9 @@ end
 
 setupCooldownTracking()
 
--- Main parry loop
+local isCurrentlyParrying = false
+local lastParryTime = 0
+
 task.spawn(function()
     while true do
         task.wait(0.016)
@@ -288,120 +481,139 @@ task.spawn(function()
         for animTrack, animInfo in pairs(allAnims) do
             if animInfo.parried then continue end
             
-            local animId = normalizeAnimId(animInfo.anim.AnimationId)
-            local attackerName = animInfo.plr.Name
+            local player = animInfo.plr
+            if not player or not player.Parent then continue end
             
-            -- Whitelist check
-            if table.find(getgenv().WHITELISTED_PLAYERS, attackerName) then
+            if table.find(getgenv().WHITELISTED_PLAYERS or {}, player.Name) then
                 continue
             end
             
-            local combatInfo = nil
+            local attackerHRP = player:FindFirstChild("HumanoidRootPart")
+            if not attackerHRP then continue end
+            
+            local distance = (myHRP.Position - attackerHRP.Position).Magnitude
+            if distance > getgenv().DETECTION_DISTANCE then continue end
+            
+            if getgenv().TARGET_FACING_CHECK_ENABLED and not isTargetFacingMe(attackerHRP, myHRP) then
+                continue
+            end
+            
+            if getgenv().SHEATH_CHECK_ENABLED and not isWeaponOut() then
+                continue
+            end
+            
+            local anim = animInfo.anim
+            if not anim then continue end
+            
+            local animId = normalizeAnimId(anim.AnimationId)
+            local combatEntry = nil
             for _, entry in ipairs(combatAnims) do
                 if entry.AnimationId == animId then
-                    combatInfo = entry
+                    combatEntry = entry
                     break
                 end
             end
             
-            if not combatInfo then continue end
-            
-            local attackerHRP = animInfo.plr:FindFirstChild("HumanoidRootPart")
-            if not attackerHRP then continue end
-            
-            local dist = (myHRP.Position - attackerHRP.Position).Magnitude
-            if dist > getgenv().DETECTION_DISTANCE then continue end
-            
-            if getgenv().TARGET_FACING_CHECK_ENABLED then
-                if not isTargetFacingMe(attackerHRP, myHRP) then
-                    continue
-                end
-            end
-            
-            if getgenv().SHEATH_CHECK_ENABLED then
-                if not isWeaponOut() then
-                    continue
-                end
-            end
-            
-            -- Failure rate check
-            if getgenv().FAILURE_RATE > 0 then
-                if math.random(1, 100) <= getgenv().FAILURE_RATE then
-                    debugPrint("Intentionally skipping parry due to failure rate")
-                    animInfo.parried = true
-                    continue
-                end
-            end
+            if not combatEntry then continue end
             
             local elapsed = tick() - animInfo.startTime
+            local windows = combatEntry.HitWindows
             
-            for _, window in ipairs(combatInfo.HitWindows) do
-                local adjustedStart = window.startTime + (getgenv().PING_COMPENSATION / 1000)
-                local timeUntilParry = adjustedStart - elapsed
+            if #windows == 0 then
+                local defaultHold = combatEntry.Hold or 0.15
+                windows = {{startTime = 0, hold = defaultHold}}
+            end
+            
+            for _, window in ipairs(windows) do
+                local startSec = window.startTime
+                local hold = window.hold
+                local pingComp = (getgenv().PING_COMPENSATION or 0) / 1000
+                local targetTime = startSec - hold + pingComp
                 
-                if timeUntilParry > 0 and timeUntilParry < 0.1 then
-                    if not isCurrentlyParrying then
-                        if getgenv().ANIMATION_CHECK_ENABLED then
-                            task.wait(0.01)
-                            if not animTrack.IsPlaying then
-                                debugPrint("Animation stopped before parry")
-                                animInfo.parried = true
-                                break
-                            end
+                if elapsed >= targetTime and not animInfo.parried then
+                    if getgenv().ANIMATION_CHECK_ENABLED then
+                        task.wait(0.01)
+                        if not animTrack or not animTrack.IsPlaying then
+                            debugPrint("[ANIMATION CHECK] Animation stopped before parry - skipping")
+                            continue
                         end
-                        
-                        isCurrentlyParrying = true
-                        task.spawn(function()
-                            local currentTick = tick()
-                            local timeSinceLastParry = currentTick - lastParryTime
-                            
-                            if timeSinceLastParry < getgenv().ACTUAL_PARRY_COOLDOWN then
-                                if getgenv().ROLL_ON_COOLDOWN_ENABLED then
-                                    debugPrint("Parry on cooldown - rolling instead")
-                                    sendAction("Dodge")
-                                else
-                                    debugPrint("Parry on cooldown - skipping")
-                                end
-                            else
-                                debugPrint("Parrying", attackerName, "at", string.format("%.3f", elapsed), "s")
-                                sendAction("Block")
-                                lastParryTime = currentTick
-                            end
-                            
-                            task.wait(0.1)
-                            isCurrentlyParrying = false
-                        end)
-                        
-                        animInfo.parried = true
+                    end
+                    
+                    if getgenv().FAILURE_RATE > 0 then
+                        local roll = math.random(1, 100)
+                        if roll <= getgenv().FAILURE_RATE then
+                            debugPrint("[FAILURE] Intentionally skipping parry (" .. roll .. " <= " .. getgenv().FAILURE_RATE .. "%)")
+                            animInfo.parried = true
+                            break
+                        end
+                    end
+                    
+                    if isCurrentlyParrying then
+                        debugPrint("[SPAM BLOCK] Already parrying, skipping")
                         break
                     end
+                    
+                    isCurrentlyParrying = true
+                    local currentTime = tick()
+                    
+                    local onCooldown = (currentTime - lastParryTime) < getgenv().ACTUAL_PARRY_COOLDOWN
+                    
+                    if onCooldown and getgenv().ROLL_ON_COOLDOWN_ENABLED then
+                        debugPrint("[ROLL] Parry on cooldown, rolling instead")
+                        sendAction("Dash")
+                    else
+                        if getgenv().PARRY_WITH_DASH_ONLY_DEBUG then
+                            sendAction("Dash")
+                            debugPrint("[DEBUG] Dash-only mode: using Dash instead of Block")
+                        else
+                            sendAction("Block")
+                        end
+                    end
+                    
+                    lastParryTime = currentTime
+                    getgenv().LAST_PARRY_TIME = currentTime
+                    animInfo.parried = true
+                    
+                    if getgenv().BLOCK_M1_ENABLED then
+                        activeBlockWindows[animTrack] = {
+                            endTime = currentTime + 0.1,
+                            animName = anim.Name or "Unknown"
+                        }
+                    end
+                    
+                    debugPrint(string.format("[PARRY] Player: %s | Anim: %s | Distance: %.1f | Window: %.3fs | Hold: %.3fs", 
+                        player.Name, anim.Name or "Unknown", distance, startSec, hold))
+                    
+                    task.delay(0.05, function()
+                        isCurrentlyParrying = false
+                    end)
+                    
+                    break
                 end
             end
         end
     end
 end)
 
--- Cleanup stale entries
 task.spawn(function()
     while true do
         task.wait(5)
         for animTrack, _ in pairs(allAnims) do
-            if not animTrack.IsPlaying then
+            if not animTrack or not animTrack.IsPlaying then
                 allAnims[animTrack] = nil
             end
         end
         local currentTick = tonumber(tick())
         local lastTick = tonumber(lastParryTime)
         if currentTick and lastTick and type(currentTick) == "number" and type(lastTick) == "number" then
-            if isCurrentlyParrying and (currentTick - lastTick > 2) then
+            if isCurrentlyParrying and (currentTick - lastTick) > 1 then
                 isCurrentlyParrying = false
-                debugPrint("Reset stuck parry lock")
+                debugPrint("[RESET] Parry lock reset")
             end
         end
     end
 end)
 
--- Character respawn
 lp.CharacterAdded:Connect(function(newCharacter)
     character = newCharacter
     setupDamageMonitor()
@@ -409,17 +621,4 @@ lp.CharacterAdded:Connect(function(newCharacter)
     isCurrentlyParrying = false
 end)
 
--- Cleanup function
-function AutoParry:Cleanup()
-    for i, connection in pairs(connections) do
-        if typeof(connection) == "RBXScriptConnection" then
-            connection:Disconnect()
-        end
-    end
-    table.clear(connections)
-    table.clear(allAnims)
-end
-
-debugPrint("AutoParry module loaded successfully")
-
-return AutoParry
+print("[AUTOPARRY] Loaded successfully!")
